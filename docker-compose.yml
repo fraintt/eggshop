@@ -1,0 +1,81 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-eggshop}
+      POSTGRES_USER: ${POSTGRES_USER:-eggshop}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-eggshop}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-eggshop}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+
+  # Fake SMTP server for local/internal testing - catches all outgoing mail.
+  # Web UI at http://localhost:8025 . Point real SMTP settings in .env once
+  # you're ready to send real email, and you can remove this service.
+  mailhog:
+    image: mailhog/mailhog:latest
+    restart: unless-stopped
+    ports:
+      - "8025:8025"
+
+  web:
+    build: .
+    restart: unless-stopped
+    command: >
+      sh -c "python manage.py makemigrations --noinput &&
+             python manage.py migrate --noinput &&
+             python manage.py setup_periodic_tasks &&
+             python manage.py collectstatic --noinput &&
+             gunicorn eggshop.wsgi:application --bind 0.0.0.0:8000 --workers 3"
+    env_file:
+      - .env
+    volumes:
+      - media_data:/app/media
+      - static_data:/app/staticfiles
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  worker:
+    build: .
+    restart: unless-stopped
+    command: celery -A eggshop worker --loglevel=info
+    env_file:
+      - .env
+    volumes:
+      - media_data:/app/media
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  beat:
+    build: .
+    restart: unless-stopped
+    command: celery -A eggshop beat --loglevel=info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+volumes:
+  postgres_data:
+  media_data:
+  static_data:
