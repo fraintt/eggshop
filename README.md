@@ -16,7 +16,7 @@ A self-hosted web app for running a small egg-ordering business among friends or
 
 ## Screenshot
 
-<img src="https://github.com/fraintt/eggshop/blob/main/IMG_7785.jpeg" width="100" height="100"/>
+<img src="https://github.com/fraintt/eggshop/blob/main/IMG_7785.jpeg" width="550" height="680"/>
 
 ## Quick start
 
