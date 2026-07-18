@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load shop_extras i18n %}
+{% block title %}{% trans "My invoices" %} &middot; {{ SITE_NAME }}{% endblock %}
+{% block content %}
+  <h1>{% trans "My invoices" %}</h1>
+  <div class="card">
+    {% if invoices %}
+      <table>
+        <thead><tr><th>{% trans "Invoice" %}</th><th>{% trans "Total" %}</th><th>{% trans "Status" %}</th><th>{% trans "Created" %}</th><th></th></tr></thead>
+        <tbody>
+          {% for invoice in invoices %}
+          <tr>
+            <td>{{ invoice.invoice_number }}</td>
+            <td>EUR {{ invoice.total }}</td>
+            <td><span class="{{ invoice.status|badge_class }}">{{ invoice.get_status_display }}</span></td>
+            <td>{{ invoice.created_at|date:"d.m.Y" }}</td>
+            <td><a href="{% url 'invoicing:invoice_detail' invoice.invoice_number %}">{% trans "View" %} &rarr;</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p class="empty-state">{% trans "No invoices yet. They're created automatically at the end of each month for delivered orders." %}</p>
+    {% endif %}
+  </div>
+{% endblock %}

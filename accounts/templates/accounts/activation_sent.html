@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Check your email" %} &middot; {{ SITE_NAME }}{% endblock %}
+{% block content %}
+  <h1>{% trans "Check your inbox" %} 📬</h1>
+  <div class="card">
+    <p>{% blocktrans with email=user.email %}We sent a confirmation link to <strong>{{ email }}</strong>. Click it to activate your account.{% endblocktrans %}</p>
+  </div>
+{% endblock %}

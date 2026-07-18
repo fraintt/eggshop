@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load shop_extras i18n %}
+{% block title %}{% trans "Order eggs" %} &middot; {{ SITE_NAME }}{% endblock %}
+{% block content %}
+  <h1>{% trans "Fresh eggs, packed by ten" %} 🥚</h1>
+
+  <div class="card">
+    <h2>{% trans "Place an order" %}</h2>
+    <p class="price-tag">EUR {{ shop_settings.price_per_pack }} <span style="font-size:1rem;color:var(--ink-soft);font-family:Inter;font-weight:500;">/ {% trans "pack of 10" %}</span></p>
+    <form method="post">
+      {% csrf_token %}
+      <div class="field">
+        <label for="{{ form.packs.id_for_label }}">{{ form.packs.label }}</label>
+        {{ form.packs }}
+        {% if form.packs.errors %}<ul class="errorlist">{% for e in form.packs.errors %}<li>{{ e }}</li>{% endfor %}</ul>{% endif %}
+        <p class="helptext">{% trans "Eggs are sold in packs of 10 only." %}</p>
+      </div>
+      <button type="submit">{% trans "Place order" %}</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>{% trans "Recent orders" %}</h2>
+    {% if recent_orders %}
+      <table>
+        <thead><tr><th>{% trans "Order" %}</th><th>{% trans "Packs" %}</th><th>{% trans "Total" %}</th><th>{% trans "Status" %}</th></tr></thead>
+        <tbody>
+          {% for order in recent_orders %}
+          <tr>
+            <td>{{ order.order_number }}</td>
+            <td>{% carton order.packs %}</td>
+            <td>EUR {{ order.total }}</td>
+            <td><span class="{{ order.status|badge_class }}">{{ order.get_status_display }}</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <p style="margin-top:1rem;"><a href="{% url 'shop:order_list' %}">{% trans "View all my orders" %} &rarr;</a></p>
+    {% else %}
+      <p class="empty-state">{% trans "No orders yet - place your first one above." %}</p>
+    {% endif %}
+  </div>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% load i18n %}{% blocktrans %}Hi {{ user }},{% endblocktrans %}
+
+{% trans "Please confirm your email to activate your Egg Shop account:" %}
+
+  {{ activation_url }}
+
+{% trans "If you didn't sign up, just ignore this email." %}

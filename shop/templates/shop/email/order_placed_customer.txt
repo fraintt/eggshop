@@ -1,0 +1,10 @@
+{% load i18n %}{% blocktrans with name=order.customer.get_full_name|default:order.customer.username %}Hi {{ name }},{% endblocktrans %}
+
+{% blocktrans with number=order.order_number %}We received your order {{ number }}:{% endblocktrans %}
+
+  {% blocktrans with packs=order.packs %}{{ packs }} pack(s) of 10 eggs{% endblocktrans %}
+  {% trans "Total:" %} EUR {{ order.total }}
+
+{% trans "We'll confirm it shortly. You'll be invoiced for it along with any other completed orders at the end of the month." %}
+
+{% trans "Thanks!" %}

@@ -1,0 +1,363 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eggshop\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+msgid "Order"
+msgstr "Objednávka"
+
+msgid "My orders"
+msgstr "Moje objednávky"
+
+msgid "My invoices"
+msgstr "Moje faktúry"
+
+msgid "Invoices"
+msgstr "Faktúry"
+
+msgid "Admin"
+msgstr "Administrácia"
+
+msgid "Log out"
+msgstr "Odhlásiť sa"
+
+msgid "Log in"
+msgstr "Prihlásiť sa"
+
+msgid "Sign up"
+msgstr "Registrovať sa"
+
+msgid "fresh eggs, honest ledger"
+msgstr "čerstvé vajcia, poctivá evidencia"
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Order eggs"
+msgstr "Objednať vajcia"
+
+msgid "Fresh eggs, packed by ten"
+msgstr "Čerstvé vajcia po desiatich"
+
+msgid "Place an order"
+msgstr "Vytvoriť objednávku"
+
+msgid "pack of 10"
+msgstr "balenie po 10"
+
+msgid "Eggs are sold in packs of 10 only."
+msgstr "Vajcia sa predávajú len v baleniach po 10 kusoch."
+
+msgid "Place order"
+msgstr "Objednať"
+
+msgid "Recent orders"
+msgstr "Posledné objednávky"
+
+msgid "Total"
+msgstr "Spolu"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "View all my orders"
+msgstr "Zobraziť všetky moje objednávky"
+
+msgid "No orders yet - place your first one above."
+msgstr "Zatiaľ žiadne objednávky - vytvorte si prvú vyššie."
+
+msgid "Packs"
+msgstr "Balenia"
+
+msgid "Eggs"
+msgstr "Vajcia"
+
+msgid "Placed"
+msgstr "Vytvorená"
+
+msgid "Cancel"
+msgstr "Zrušiť"
+
+msgid "No orders yet."
+msgstr "Zatiaľ žiadne objednávky."
+
+msgid "Confirm cancellation"
+msgstr "Potvrdiť zrušenie"
+
+msgid "Never mind"
+msgstr "Predsa len nie"
+
+msgid "Invoice"
+msgstr "Faktúra"
+
+msgid "Created"
+msgstr "Vytvorená"
+
+msgid "View"
+msgstr "Zobraziť"
+
+msgid "No invoices yet. They're created automatically at the end of each month for delivered orders."
+msgstr "Zatiaľ žiadne faktúry. Vytvárajú sa automaticky na konci mesiaca za doručené objednávky."
+
+msgid "Orders on this invoice"
+msgstr "Objednávky na tejto faktúre"
+
+msgid "Price/pack"
+msgstr "Cena/balenie"
+
+msgid "Total:"
+msgstr "Spolu:"
+
+msgid "Pay by Square"
+msgstr "Pay by Square"
+
+msgid "Scan this with your banking app to pay."
+msgstr "Naskenujte toto vo svojej bankovej aplikácii a zaplaťte."
+
+msgid "Pay by Square QR code"
+msgstr "QR kód Pay by Square"
+
+msgid "Download PDF"
+msgstr "Stiahnuť PDF"
+
+msgid "Back to invoices"
+msgstr "Späť na faktúry"
+
+msgid "Create your account"
+msgstr "Vytvoriť účet"
+
+msgid "Already have an account?"
+msgstr "Už máte účet?"
+
+msgid "Check your inbox"
+msgstr "Skontrolujte si e-mail"
+
+msgid "That link isn't valid"
+msgstr "Tento odkaz nie je platný"
+
+msgid "This activation link is invalid or has already been used."
+msgstr "Tento aktivačný odkaz je neplatný alebo už bol použitý."
+
+msgid "Sign up again"
+msgstr "Zaregistrovať sa znova"
+
+msgid "or"
+msgstr "alebo"
+
+msgid "log in"
+msgstr "prihláste sa"
+
+msgid "if you're already active."
+msgstr "ak je váš účet už aktívny."
+
+msgid "Forgot your password?"
+msgstr "Zabudli ste heslo?"
+
+msgid "No account yet?"
+msgstr "Ešte nemáte účet?"
+
+msgid "Change password"
+msgstr "Zmeniť heslo"
+
+msgid "Password changed"
+msgstr "Heslo zmenené"
+
+msgid "Your password was updated successfully."
+msgstr "Vaše heslo bolo úspešne zmenené."
+
+msgid "Reset your password"
+msgstr "Obnoviť heslo"
+
+msgid "Enter your email and we'll send you a link to reset your password."
+msgstr "Zadajte svoj e-mail a pošleme vám odkaz na obnovenie hesla."
+
+msgid "Send reset link"
+msgstr "Odoslať odkaz"
+
+msgid "If that email exists, a reset link is on its way."
+msgstr "Ak tento e-mail existuje, odkaz je už na ceste."
+
+msgid "Set a new password"
+msgstr "Nastaviť nové heslo"
+
+msgid "Set password"
+msgstr "Nastaviť heslo"
+
+msgid "This reset link is invalid or has expired."
+msgstr "Tento odkaz je neplatný alebo vypršal."
+
+msgid "Request a new one"
+msgstr "Vyžiadať nový"
+
+msgid "Password reset complete"
+msgstr "Heslo bolo obnovené"
+
+msgid "with your new password."
+msgstr "s novým heslom."
+
+msgid "Reset your Egg Shop password"
+msgstr "Obnovte si heslo do Egg Shop"
+
+msgid "You (or someone else) requested a password reset for your Egg Shop account."
+msgstr "Vy (alebo niekto iný) ste požiadali o obnovenie hesla pre váš účet Egg Shop."
+
+msgid "Click the link below to set a new password:"
+msgstr "Kliknutím na odkaz nižšie nastavíte nové heslo:"
+
+msgid "If you didn't request this, you can ignore this email."
+msgstr "Ak ste o to nežiadali, tento e-mail môžete ignorovať."
+
+msgid "Please confirm your email to activate your Egg Shop account:"
+msgstr "Potvrďte svoj e-mail a aktivujte si účet Egg Shop:"
+
+msgid "If you didn't sign up, just ignore this email."
+msgstr "Ak ste sa neregistrovali, tento e-mail jednoducho ignorujte."
+
+msgid "New order placed."
+msgstr "Bola vytvorená nová objednávka."
+
+msgid "Order:"
+msgstr "Objednávka:"
+
+msgid "Customer:"
+msgstr "Zákazník:"
+
+msgid "Packs:"
+msgstr "Balenia:"
+
+msgid "Open the admin to confirm it."
+msgstr "Otvorte administráciu a potvrďte ju."
+
+msgid "A customer cancelled their own order."
+msgstr "Zákazník zrušil svoju vlastnú objednávku."
+
+msgid "Reason:"
+msgstr "Dôvod:"
+
+msgid "Sorry about that - feel free to place a new order any time."
+msgstr "Je nám to ľúto - kedykoľvek si môžete vytvoriť novú objednávku."
+
+msgid "We'll confirm it shortly. You'll be invoiced for it along with any other completed orders at the end of the month."
+msgstr "Čoskoro ju potvrdíme. Bude vyfakturovaná spolu s ostatnými dokončenými objednávkami na konci mesiaca."
+
+msgid "Thanks!"
+msgstr "Ďakujeme!"
+
+msgid "It's attached as a PDF with a Pay by Square QR code you can scan with your banking app. You can also view it any time at:"
+msgstr "Je priložená ako PDF s QR kódom Pay by Square, ktorý môžete naskenovať vo svojej bankovej aplikácii. Kedykoľvek si ju môžete pozrieť aj tu:"
+
+msgid "Thanks for your order!"
+msgstr "Ďakujeme za vašu objednávku!"
+
+msgid "Check your email"
+msgstr "Skontrolujte si e-mail"
+
+msgid "Reset password"
+msgstr "Obnovenie hesla"
+
+msgid "Reset email sent"
+msgstr "E-mail bol odoslaný"
+
+msgid "Set new password"
+msgstr "Nastavenie nového hesla"
+
+msgid "Invalid link"
+msgstr "Neplatný odkaz"
+
+msgid "Pending"
+msgstr "Čaká na potvrdenie"
+
+msgid "Confirmed"
+msgstr "Potvrdená"
+
+msgid "Completed (delivered)"
+msgstr "Dokončená (doručená)"
+
+msgid "Invoiced"
+msgstr "Vyfakturovaná"
+
+msgid "Paid"
+msgstr "Zaplatená"
+
+msgid "Cancelled"
+msgstr "Zrušená"
+
+msgid "Open"
+msgstr "Otvorená"
+
+msgid "Number of packs (10 eggs each)"
+msgstr "Počet balení (po 10 vajec)"
+
+msgid "Reason (optional)"
+msgstr "Dôvod (nepovinné)"
+
+msgid "Reason"
+msgstr "Dôvod"
+
+msgid "Hi %(name)s,"
+msgstr "Ahoj %(name)s,"
+
+msgid "Hi %(user)s,"
+msgstr "Ahoj %(user)s,"
+
+msgid "Your monthly invoice %(number)s is ready, totalling EUR %(total)s."
+msgstr "Vaša mesačná faktúra %(number)s je pripravená, spolu na sumu EUR %(total)s."
+
+msgid "We've marked invoice %(number)s (EUR %(total)s) as paid."
+msgstr "Faktúru %(number)s (EUR %(total)s) sme označili ako zaplatenú."
+
+msgid "Invoice %(number)s"
+msgstr "Faktúra %(number)s"
+
+msgid "created %(created)s"
+msgstr "vytvorená %(created)s"
+
+msgid "paid %(paid)s"
+msgstr "zaplatená %(paid)s"
+
+msgid "Cancel order %(number)s"
+msgstr "Zrušiť objednávku %(number)s"
+
+msgid "%(packs)s pack(s) &middot; EUR %(total)s"
+msgstr "%(packs)s balenie(-í) &middot; EUR %(total)s"
+
+msgid "We received your order %(number)s:"
+msgstr "Prijali sme vašu objednávku %(number)s:"
+
+msgid "%(packs)s pack(s) of 10 eggs"
+msgstr "%(packs)s balenie(-í) po 10 vajciach"
+
+msgid "Your order %(number)s (%(packs)s pack(s), EUR %(total)s) was cancelled."
+msgstr "Vaša objednávka %(number)s (%(packs)s balenie(-í), EUR %(total)s) bola zrušená."
+
+msgid "%(eggs)s eggs"
+msgstr "%(eggs)s vajec"
+
+msgid "We sent a confirmation link to <strong>%(email)s</strong>. Click it to activate your account."
+msgstr "Poslali sme potvrdzovací odkaz na <strong>%(email)s</strong>. Kliknutím naň aktivujete svoj účet."
+
+msgid "New order %(number)s"
+msgstr "Nová objednávka %(number)s"
+
+msgid "Order %(number)s received"
+msgstr "Objednávka %(number)s prijatá"
+
+msgid "Order %(number)s was cancelled"
+msgstr "Objednávka %(number)s bola zrušená"
+
+msgid "Customer cancelled order %(number)s"
+msgstr "Zákazník zrušil objednávku %(number)s"
+
+msgid "Invoice %(number)s - payment received"
+msgstr "Faktúra %(number)s - platba prijatá"
+
+msgid "%(counter)s pack of 10 eggs"
+msgid_plural "%(counter)s packs of 10 eggs"
+msgstr[0] "%(counter)s balenie po 10 vajciach"
+msgstr[1] "%(counter)s balenia po 10 vajciach"
+msgstr[2] "%(counter)s balení po 10 vajciach"

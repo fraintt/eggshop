@@ -1,0 +1,9 @@
+{% load i18n %}{% blocktrans with name=invoice.customer.get_full_name|default:invoice.customer.username %}Hi {{ name }},{% endblocktrans %}
+
+{% blocktrans with number=invoice.invoice_number total=invoice.total %}Your monthly invoice {{ number }} is ready, totalling EUR {{ total }}.{% endblocktrans %}
+
+{% trans "It's attached as a PDF with a Pay by Square QR code you can scan with your banking app. You can also view it any time at:" %}
+
+  /invoices/{{ invoice.invoice_number }}/
+
+{% trans "Thanks for your order!" %}

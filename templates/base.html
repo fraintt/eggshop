@@ -1,0 +1,60 @@
+{% load static i18n %}<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="{% url 'shop:home' %}">
+      <span class="brand-egg" aria-hidden="true">
+        <svg viewBox="0 0 24 30" width="22" height="28"><path d="M12 1C6 10 2 17 2 21.5 2 26.2 6.5 29 12 29s10-2.8 10-7.5C22 17 18 10 12 1Z" fill="var(--yolk)"/></svg>
+      </span>
+      {{ SITE_NAME }}
+    </a>
+    <nav class="nav">
+      {% if user.is_authenticated %}
+        <a href="{% url 'shop:home' %}">{% trans "Order" %}</a>
+        <a href="{% url 'shop:order_list' %}">{% trans "My orders" %}</a>
+        <a href="{% url 'invoicing:invoice_list' %}">{% trans "Invoices" %}</a>
+        {% if user.is_staff %}<a href="{% url 'admin:index' %}">{% trans "Admin" %}</a>{% endif %}
+        <form method="post" action="{% url 'accounts:logout' %}" class="inline-form">
+          {% csrf_token %}
+          <button type="submit" class="link-button">{% trans "Log out" %}</button>
+        </form>
+      {% else %}
+        <a href="{% url 'accounts:login' %}">{% trans "Log in" %}</a>
+        <a href="{% url 'accounts:signup' %}" class="cta">{% trans "Sign up" %}</a>
+      {% endif %}
+      <form method="post" action="{% url 'accounts:set_language' %}" class="lang-switch">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ request.path }}">
+        <select name="language" onchange="this.form.submit()" aria-label="{% trans 'Language' %}">
+          {% for code, name in LANGUAGES %}
+            <option value="{{ code }}" {% if code == LANGUAGE_CODE %}selected{% endif %}>{{ name }}</option>
+          {% endfor %}
+        </select>
+      </form>
+    </nav>
+  </header>
+
+  <main class="page">
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          <li class="message message-{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <span>{{ SITE_NAME }} &middot; {% trans "fresh eggs, honest ledger" %} 🥚</span>
+  </footer>
+</body>
+</html>

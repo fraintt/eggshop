@@ -1,0 +1,7 @@
+{% load i18n %}{% blocktrans with name=order.customer.get_full_name|default:order.customer.username %}Hi {{ name }},{% endblocktrans %}
+
+{% blocktrans with number=order.order_number packs=order.packs total=order.total %}Your order {{ number }} ({{ packs }} pack(s), EUR {{ total }}) was cancelled.{% endblocktrans %}
+{% if order.cancellation_reason %}
+{% trans "Reason:" %} {{ order.cancellation_reason }}
+{% endif %}
+{% trans "Sorry about that - feel free to place a new order any time." %}

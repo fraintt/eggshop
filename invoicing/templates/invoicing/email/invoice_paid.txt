@@ -1,0 +1,4 @@
+{% load i18n %}{% blocktrans with name=invoice.customer.get_full_name|default:invoice.customer.username %}Hi {{ name }},{% endblocktrans %}
+
+{% blocktrans with number=invoice.invoice_number total=invoice.total %}We've marked invoice {{ number }} (EUR {{ total }}) as paid.{% endblocktrans %}
+{% trans "Thanks!" %}

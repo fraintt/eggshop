@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load shop_extras i18n %}
+{% block title %}{% blocktrans with number=invoice.invoice_number %}Invoice {{ number }}{% endblocktrans %}{% endblock %}
+{% block content %}
+  <h1>{% blocktrans with number=invoice.invoice_number %}Invoice {{ number }}{% endblocktrans %}</h1>
+  <p><span class="{{ invoice.status|badge_class }}">{{ invoice.get_status_display }}</span>
+     &nbsp;{% blocktrans with created=invoice.created_at|date:"d.m.Y" %}created {{ created }}{% endblocktrans %}{% if invoice.paid_at %} &middot; {% blocktrans with paid=invoice.paid_at|date:"d.m.Y" %}paid {{ paid }}{% endblocktrans %}{% endif %}</p>
+
+  <div class="card">
+    <h2>{% trans "Orders on this invoice" %}</h2>
+    <table>
+      <thead><tr><th>{% trans "Order" %}</th><th>{% trans "Packs" %}</th><th>{% trans "Price/pack" %}</th><th>{% trans "Total" %}</th></tr></thead>
+      <tbody>
+        {% for order in invoice.orders.all %}
+        <tr>
+          <td>{{ order.order_number }}</td>
+          <td>{{ order.packs }}</td>
+          <td>EUR {{ order.price_per_pack }}</td>
+          <td>EUR {{ order.total }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p class="price-tag" style="margin-top:1rem;">{% trans "Total:" %} EUR {{ invoice.total }}</p>
+  </div>
+
+  {% if invoice.status == "open" %}
+  <div class="card">
+    <h2>{% trans "Pay by Square" %}</h2>
+    <p>{% trans "Scan this with your banking app to pay." %}</p>
+    <img src="{% url 'invoicing:invoice_qr' invoice.invoice_number %}" alt="{% trans 'Pay by Square QR code' %}" width="180" height="180" style="border:1px solid var(--carton-line);border-radius:8px;">
+  </div>
+  {% endif %}
+
+  <a href="{% url 'invoicing:invoice_pdf' invoice.invoice_number %}" class="button">{% trans "Download PDF" %}</a>
+  <a href="{% url 'invoicing:invoice_list' %}" class="button secondary">{% trans "Back to invoices" %}</a>
+{% endblock %}

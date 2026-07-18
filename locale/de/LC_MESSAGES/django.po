@@ -1,0 +1,362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eggshop\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Order"
+msgstr "Bestellung"
+
+msgid "My orders"
+msgstr "Meine Bestellungen"
+
+msgid "My invoices"
+msgstr "Meine Rechnungen"
+
+msgid "Invoices"
+msgstr "Rechnungen"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Log out"
+msgstr "Abmelden"
+
+msgid "Log in"
+msgstr "Anmelden"
+
+msgid "Sign up"
+msgstr "Registrieren"
+
+msgid "fresh eggs, honest ledger"
+msgstr "frische Eier, ehrliche Buchhaltung"
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Order eggs"
+msgstr "Eier bestellen"
+
+msgid "Fresh eggs, packed by ten"
+msgstr "Frische Eier, im Zehnerpack"
+
+msgid "Place an order"
+msgstr "Bestellung aufgeben"
+
+msgid "pack of 10"
+msgstr "10er-Packung"
+
+msgid "Eggs are sold in packs of 10 only."
+msgstr "Eier werden nur in 10er-Packungen verkauft."
+
+msgid "Place order"
+msgstr "Bestellen"
+
+msgid "Recent orders"
+msgstr "Letzte Bestellungen"
+
+msgid "Total"
+msgstr "Gesamt"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "View all my orders"
+msgstr "Alle meine Bestellungen ansehen"
+
+msgid "No orders yet - place your first one above."
+msgstr "Noch keine Bestellungen - geben Sie oben Ihre erste auf."
+
+msgid "Packs"
+msgstr "Packungen"
+
+msgid "Eggs"
+msgstr "Eier"
+
+msgid "Placed"
+msgstr "Aufgegeben am"
+
+msgid "Cancel"
+msgstr "Stornieren"
+
+msgid "No orders yet."
+msgstr "Noch keine Bestellungen."
+
+msgid "Confirm cancellation"
+msgstr "Stornierung bestätigen"
+
+msgid "Never mind"
+msgstr "Doch nicht"
+
+msgid "Invoice"
+msgstr "Rechnung"
+
+msgid "Created"
+msgstr "Erstellt"
+
+msgid "View"
+msgstr "Ansehen"
+
+msgid "No invoices yet. They're created automatically at the end of each month for delivered orders."
+msgstr "Noch keine Rechnungen. Sie werden am Monatsende automatisch für gelieferte Bestellungen erstellt."
+
+msgid "Orders on this invoice"
+msgstr "Bestellungen auf dieser Rechnung"
+
+msgid "Price/pack"
+msgstr "Preis/Packung"
+
+msgid "Total:"
+msgstr "Gesamt:"
+
+msgid "Pay by Square"
+msgstr "Pay by Square"
+
+msgid "Scan this with your banking app to pay."
+msgstr "Scannen Sie dies mit Ihrer Banking-App, um zu bezahlen."
+
+msgid "Pay by Square QR code"
+msgstr "Pay by Square QR-Code"
+
+msgid "Download PDF"
+msgstr "PDF herunterladen"
+
+msgid "Back to invoices"
+msgstr "Zurück zu den Rechnungen"
+
+msgid "Create your account"
+msgstr "Konto erstellen"
+
+msgid "Already have an account?"
+msgstr "Sie haben bereits ein Konto?"
+
+msgid "Check your inbox"
+msgstr "Prüfen Sie Ihr Postfach"
+
+msgid "That link isn't valid"
+msgstr "Dieser Link ist ungültig"
+
+msgid "This activation link is invalid or has already been used."
+msgstr "Dieser Aktivierungslink ist ungültig oder wurde bereits verwendet."
+
+msgid "Sign up again"
+msgstr "Erneut registrieren"
+
+msgid "or"
+msgstr "oder"
+
+msgid "log in"
+msgstr "anmelden"
+
+msgid "if you're already active."
+msgstr "falls Ihr Konto bereits aktiv ist."
+
+msgid "Forgot your password?"
+msgstr "Passwort vergessen?"
+
+msgid "No account yet?"
+msgstr "Noch kein Konto?"
+
+msgid "Change password"
+msgstr "Passwort ändern"
+
+msgid "Password changed"
+msgstr "Passwort geändert"
+
+msgid "Your password was updated successfully."
+msgstr "Ihr Passwort wurde erfolgreich aktualisiert."
+
+msgid "Reset your password"
+msgstr "Passwort zurücksetzen"
+
+msgid "Enter your email and we'll send you a link to reset your password."
+msgstr "Geben Sie Ihre E-Mail-Adresse ein, und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts."
+
+msgid "Send reset link"
+msgstr "Link senden"
+
+msgid "If that email exists, a reset link is on its way."
+msgstr "Falls diese E-Mail-Adresse existiert, ist ein Link bereits unterwegs."
+
+msgid "Set a new password"
+msgstr "Neues Passwort festlegen"
+
+msgid "Set password"
+msgstr "Passwort festlegen"
+
+msgid "This reset link is invalid or has expired."
+msgstr "Dieser Link ist ungültig oder abgelaufen."
+
+msgid "Request a new one"
+msgstr "Neuen anfordern"
+
+msgid "Password reset complete"
+msgstr "Passwort zurückgesetzt"
+
+msgid "with your new password."
+msgstr "mit Ihrem neuen Passwort an."
+
+msgid "Reset your Egg Shop password"
+msgstr "Setzen Sie Ihr Egg Shop-Passwort zurück"
+
+msgid "You (or someone else) requested a password reset for your Egg Shop account."
+msgstr "Sie (oder jemand anderes) haben eine Passwortzurücksetzung für Ihr Egg Shop-Konto angefordert."
+
+msgid "Click the link below to set a new password:"
+msgstr "Klicken Sie auf den folgenden Link, um ein neues Passwort festzulegen:"
+
+msgid "If you didn't request this, you can ignore this email."
+msgstr "Wenn Sie dies nicht angefordert haben, können Sie diese E-Mail ignorieren."
+
+msgid "Please confirm your email to activate your Egg Shop account:"
+msgstr "Bitte bestätigen Sie Ihre E-Mail-Adresse, um Ihr Egg Shop-Konto zu aktivieren:"
+
+msgid "If you didn't sign up, just ignore this email."
+msgstr "Wenn Sie sich nicht registriert haben, ignorieren Sie diese E-Mail einfach."
+
+msgid "New order placed."
+msgstr "Neue Bestellung eingegangen."
+
+msgid "Order:"
+msgstr "Bestellung:"
+
+msgid "Customer:"
+msgstr "Kunde:"
+
+msgid "Packs:"
+msgstr "Packungen:"
+
+msgid "Open the admin to confirm it."
+msgstr "Öffnen Sie das Admin-Panel, um sie zu bestätigen."
+
+msgid "A customer cancelled their own order."
+msgstr "Ein Kunde hat seine eigene Bestellung storniert."
+
+msgid "Reason:"
+msgstr "Grund:"
+
+msgid "Sorry about that - feel free to place a new order any time."
+msgstr "Das tut uns leid - Sie können jederzeit eine neue Bestellung aufgeben."
+
+msgid "We'll confirm it shortly. You'll be invoiced for it along with any other completed orders at the end of the month."
+msgstr "Wir bestätigen sie in Kürze. Sie wird zusammen mit anderen abgeschlossenen Bestellungen am Monatsende in Rechnung gestellt."
+
+msgid "Thanks!"
+msgstr "Danke!"
+
+msgid "It's attached as a PDF with a Pay by Square QR code you can scan with your banking app. You can also view it any time at:"
+msgstr "Sie ist als PDF mit einem Pay by Square QR-Code beigefügt, den Sie mit Ihrer Banking-App scannen können. Sie können sie jederzeit auch hier ansehen:"
+
+msgid "Thanks for your order!"
+msgstr "Danke für Ihre Bestellung!"
+
+msgid "Check your email"
+msgstr "Prüfen Sie Ihre E-Mails"
+
+msgid "Reset password"
+msgstr "Passwort zurücksetzen"
+
+msgid "Reset email sent"
+msgstr "E-Mail gesendet"
+
+msgid "Set new password"
+msgstr "Neues Passwort setzen"
+
+msgid "Invalid link"
+msgstr "Ungültiger Link"
+
+msgid "Pending"
+msgstr "Ausstehend"
+
+msgid "Confirmed"
+msgstr "Bestätigt"
+
+msgid "Completed (delivered)"
+msgstr "Abgeschlossen (geliefert)"
+
+msgid "Invoiced"
+msgstr "In Rechnung gestellt"
+
+msgid "Paid"
+msgstr "Bezahlt"
+
+msgid "Cancelled"
+msgstr "Storniert"
+
+msgid "Open"
+msgstr "Offen"
+
+msgid "Number of packs (10 eggs each)"
+msgstr "Anzahl der Packungen (je 10 Eier)"
+
+msgid "Reason (optional)"
+msgstr "Grund (optional)"
+
+msgid "Reason"
+msgstr "Grund"
+
+msgid "Hi %(name)s,"
+msgstr "Hallo %(name)s,"
+
+msgid "Hi %(user)s,"
+msgstr "Hallo %(user)s,"
+
+msgid "Your monthly invoice %(number)s is ready, totalling EUR %(total)s."
+msgstr "Ihre monatliche Rechnung %(number)s ist fertig, mit einem Gesamtbetrag von EUR %(total)s."
+
+msgid "We've marked invoice %(number)s (EUR %(total)s) as paid."
+msgstr "Wir haben die Rechnung %(number)s (EUR %(total)s) als bezahlt markiert."
+
+msgid "Invoice %(number)s"
+msgstr "Rechnung %(number)s"
+
+msgid "created %(created)s"
+msgstr "erstellt am %(created)s"
+
+msgid "paid %(paid)s"
+msgstr "bezahlt am %(paid)s"
+
+msgid "Cancel order %(number)s"
+msgstr "Bestellung %(number)s stornieren"
+
+msgid "%(packs)s pack(s) &middot; EUR %(total)s"
+msgstr "%(packs)s Packung(en) &middot; EUR %(total)s"
+
+msgid "We received your order %(number)s:"
+msgstr "Wir haben Ihre Bestellung %(number)s erhalten:"
+
+msgid "%(packs)s pack(s) of 10 eggs"
+msgstr "%(packs)s Packung(en) mit 10 Eiern"
+
+msgid "Your order %(number)s (%(packs)s pack(s), EUR %(total)s) was cancelled."
+msgstr "Ihre Bestellung %(number)s (%(packs)s Packung(en), EUR %(total)s) wurde storniert."
+
+msgid "%(eggs)s eggs"
+msgstr "%(eggs)s Eier"
+
+msgid "We sent a confirmation link to <strong>%(email)s</strong>. Click it to activate your account."
+msgstr "Wir haben einen Bestätigungslink an <strong>%(email)s</strong> gesendet. Klicken Sie darauf, um Ihr Konto zu aktivieren."
+
+msgid "New order %(number)s"
+msgstr "Neue Bestellung %(number)s"
+
+msgid "Order %(number)s received"
+msgstr "Bestellung %(number)s erhalten"
+
+msgid "Order %(number)s was cancelled"
+msgstr "Bestellung %(number)s wurde storniert"
+
+msgid "Customer cancelled order %(number)s"
+msgstr "Kunde hat Bestellung %(number)s storniert"
+
+msgid "Invoice %(number)s - payment received"
+msgstr "Rechnung %(number)s - Zahlung erhalten"
+
+msgid "%(counter)s pack of 10 eggs"
+msgid_plural "%(counter)s packs of 10 eggs"
+msgstr[0] "%(counter)s Packung mit 10 Eiern"
+msgstr[1] "%(counter)s Packungen mit 10 Eiern"

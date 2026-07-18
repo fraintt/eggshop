@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Invalid link" %} &middot; {{ SITE_NAME }}{% endblock %}
+{% block content %}
+  <h1>{% trans "That link isn't valid" %}</h1>
+  <div class="card">
+    <p>{% trans "This activation link is invalid or has already been used." %}
+    <a href="{% url 'accounts:signup' %}">{% trans "Sign up again" %}</a>
+    {% trans "or" %}
+    <a href="{% url 'accounts:login' %}">{% trans "log in" %}</a>
+    {% trans "if you're already active." %}</p>
+  </div>
+{% endblock %}

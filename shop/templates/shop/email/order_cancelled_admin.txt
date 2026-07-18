@@ -1,0 +1,6 @@
+{% load i18n %}{% trans "A customer cancelled their own order." %}
+
+{% trans "Order:" %} {{ order.order_number }}
+{% trans "Customer:" %} {{ order.customer.get_full_name|default:order.customer.username }} ({{ order.customer.email }})
+{% trans "Packs:" %} {{ order.packs }} ({% blocktrans with eggs=order.eggs %}{{ eggs }} eggs{% endblocktrans %})
+{% if order.cancellation_reason %}{% trans "Reason:" %} {{ order.cancellation_reason }}{% endif %}

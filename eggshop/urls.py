@@ -1,0 +1,10 @@
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("accounts/", include("accounts.urls")),
+    path("invoices/", include("invoicing.urls")),
+    path("api/ha/", include("haapi.urls")),
+    path("", include("shop.urls")),
+]

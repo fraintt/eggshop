@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load shop_extras i18n %}
+{% block title %}{% trans "My orders" %} &middot; {{ SITE_NAME }}{% endblock %}
+{% block content %}
+  <h1>{% trans "My orders" %}</h1>
+  <div class="card">
+    {% if orders %}
+      <table>
+        <thead><tr><th>{% trans "Order" %}</th><th>{% trans "Packs" %}</th><th>{% trans "Eggs" %}</th><th>{% trans "Total" %}</th><th>{% trans "Status" %}</th><th>{% trans "Placed" %}</th><th></th></tr></thead>
+        <tbody>
+          {% for order in orders %}
+          <tr>
+            <td>{{ order.order_number }}</td>
+            <td>{% carton order.packs %}</td>
+            <td>{{ order.eggs }}</td>
+            <td>EUR {{ order.total }}</td>
+            <td><span class="{{ order.status|badge_class }}">{{ order.get_status_display }}</span></td>
+            <td>{{ order.created_at|date:"d.m.Y" }}</td>
+            <td>
+              {% if order.can_be_cancelled %}
+                <a href="{% url 'shop:order_cancel' order.order_number %}" class="button danger" style="padding:.3rem .8rem;font-size:.85rem;">{% trans "Cancel" %}</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p class="empty-state">{% trans "No orders yet." %}</p>
+    {% endif %}
+  </div>
+{% endblock %}

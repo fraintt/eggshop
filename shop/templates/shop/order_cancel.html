@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% blocktrans with number=order.order_number %}Cancel order {{ number }}{% endblocktrans %}{% endblock %}
+{% block content %}
+  <h1>{% blocktrans with number=order.order_number %}Cancel order {{ number }}{% endblocktrans %}</h1>
+  <div class="card">
+    <p>{% blocktrans with packs=order.packs total=order.total %}{{ packs }} pack(s) &middot; EUR {{ total }}{% endblocktrans %}</p>
+    <form method="post">
+      {% csrf_token %}
+      <div class="field">
+        <label for="{{ form.reason.id_for_label }}">{{ form.reason.label }}</label>
+        {{ form.reason }}
+      </div>
+      <button type="submit" class="button danger">{% trans "Confirm cancellation" %}</button>
+      <a href="{% url 'shop:order_list' %}" class="button secondary">{% trans "Never mind" %}</a>
+    </form>
+  </div>
+{% endblock %}
