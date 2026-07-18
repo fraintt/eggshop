@@ -14,6 +14,8 @@ A self-hosted web app for running a small egg-ordering business among friends or
 - JSON API for Home Assistant (order counts, unpaid/paid totals)
 - Multi-language UI: English, German, Slovak
 
+![alt text](https://github.com/fraintt/eggshop/blob/main/IMG_7785.jpeg "Screenshot")
+
 ## Quick start
 
 ```bash
