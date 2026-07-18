@@ -45,3 +45,7 @@ Django · PostgreSQL · Celery + Redis · Docker Compose
 ## Status
 
 Built for hobby/internal use — no HTTPS, VAT invoicing, or backups configured out of the box. See `README-full.md` for what's intentionally out of scope.
+
+## Disclaimer
+
+This APP was build with the use of Claude AI. The owner of this repository takes no responsibility for the code. 
