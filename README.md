@@ -17,7 +17,7 @@ A self-hosted web app for running a small egg-ordering business among friends or
 ## Quick start
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/fraintt/eggshop.git
 cd eggshop
 cp .env.example .env   # set DJANGO_SECRET_KEY and HA_API_TOKEN
 docker compose up --build
